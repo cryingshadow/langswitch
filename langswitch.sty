@@ -1,0 +1,8 @@
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{langswitch}[2026/06/12 Switch between English and another language]
+
+\newif\ifenglish
+\englishfalse
+
+\newcommand{\langswitch}[2]{\ifenglish#1\else#2\fi}
+
